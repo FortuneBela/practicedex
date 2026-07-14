@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func commandMapB(cfg *config) error {
+func commandMapB(cfg *config, args []string) error {
 	targetURL := ""
 	if cfg.PrevURL == nil {
 		fmt.Print("you're on the first page")

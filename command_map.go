@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func commandMap(cfg *config) error {
+func commandMap(cfg *config, args []string) error {
 	targetURL := ""
 	if cfg.NextURL == nil {
 		targetURL = "https://pokeapi.co/api/v2/location-area"
