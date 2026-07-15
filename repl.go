@@ -69,6 +69,11 @@ func getCommands() map[string]cliCommand {
 			description: "Adding a Pokemon name after catch, will give you a chance at catching that Pokemon.",
 			callback:    commandCatch,
 		},
+		"inspect": {
+			name:        "catch",
+			description: "Inspect a pokemon you have caught.",
+			callback:    commandInspect,
+		},
 	}
 }
 
